@@ -22,14 +22,14 @@
 	
 	
 	
-	try {
-        $conn = new PDO("sqlsrv:server = tcp:prosoftserver.database.windows.net,1433; Database = C5Cell_Tracker", "celltracker", "{Prosoftdev12#}");
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
-    catch (PDOException $e) {
-        print("Error connecting to SQL Server.");
-        die(print_r($e));
-}
+// 	try {
+//         $conn = new PDO("sqlsrv:server = tcp:prosoftserver.database.windows.net,1433; Database = C5Cell_Tracker", "celltracker", "{Prosoftdev12#}");
+//         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//     }
+//     catch (PDOException $e) {
+//         print("Error connecting to SQL Server.");
+//         die(print_r($e));
+// }
 	
 	
 	//---------------------
@@ -42,8 +42,8 @@
     $con = sqlsrv_connect($serverName, $connectionOptions);
         
     
-    echo "hello Server".$con; 
-    die();
+//     echo "hello Server".$con; 
+//     die();
     
 	
 	$latitude= $_POST["latitude"];
