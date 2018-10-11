@@ -11,29 +11,6 @@
 // 	$mysql_password='{Prosoftdev12#}';
 	
 	
-// 	$con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,"C5Cell_Tracker");
-	
-	
-// 	$connectionInfo = array("UID" => "celltracker@prosoftserver", "pwd" => "{Prosoftdev12#}", "Database" => "C5Cell_Tracker", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-//     $serverName = "tcp:prosoftserver.database.windows.net,1433";
-//     $conn = sqlsrv_connect($serverName, $connectionInfo);
-
-//     echo "hello Server".$con;  die();
-	
-	
-	
-// 	try {
-//         $conn = new PDO("sqlsrv:server = tcp:prosoftserver.database.windows.net,1433; Database = C5Cell_Tracker", "celltracker", "{Prosoftdev12#}");
-//         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//     }
-//     catch (PDOException $e) {
-//         print("Error connecting to SQL Server.");
-//         die(print_r($e));
-// }
-	
-	
-	//---------------------
-	
     $serverName = "<prosoftserver.database.windows.net>";
     $connectionOptions = array("Database" => "<C5Cell_Tracker>", 
     "Uid" => "<celltracker@prosoftserver>", 
@@ -41,9 +18,13 @@
 
     $con = sqlsrv_connect($serverName, $connectionOptions);
         
+	if ($con->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+	} 
+	echo "Connected successfully";
     
 //     echo "hello Server".$con; 
-//     die();
+      die();
     
 	
 	$latitude= $_POST["latitude"];
