@@ -25,7 +25,7 @@
 
    	$sql = "SELECT TOP 5 * FROM towers_details";  
         $res = mysqli_query($con, $sql); 
-	echo $sql; die();
+	//echo $sql; die();
 	$ret=NULL; $c=0;
 	
 	$count_res = $res->num_rows;
@@ -65,6 +65,11 @@
          		$c++;
     	}
 	}
+else{
+
+	echo "NAAAAAAAAAAAAAAAAAAAAAAAA"
+
+}
 	//$user_data = json_encode($ret);
 	print_r($user_data); die();
 	print $user_data;
