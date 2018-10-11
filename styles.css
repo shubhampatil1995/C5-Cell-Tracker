@@ -1,0 +1,54 @@
+body{
+	margin: 0 auto;
+	background-image: url("../Trazer/img/pic1.jpg");
+	background-repeat: no-repeat;
+	}
+	.container{
+
+		width: 430px;
+		height: 340px;
+		text-align: center;
+		background-color: rgba(66, 66, 66, 0.3);
+		border-radius: 4px;
+		margin: 0 auto;
+		margin-top: 150px;
+	}
+	.container img{
+		
+		height: 120px;
+		width: 120px;
+		margin-top: -60px;
+		margin-bottom: 30px;
+		
+		
+	}
+	input{
+		
+		height: 45px;
+		width: 300px;
+		border-radius: 4px;
+		font-size: 18px;
+		margin-bottom: 20px;
+		background-color: #FFF;
+		padding-left: 20px;
+	}
+	form-input::before{
+		content: "\f007";
+		position: absolute;
+		font-family: "FontAwesome";
+		padding-left: 5px;
+		color: #9B59B6;
+		padding-top: 5px;
+		font-size: 30px;
+	
+	}
+	.btn btn-block btn-success{
+		
+		width: 300px
+		color: #FFF;
+		border-radius: 4px;
+		border: none;
+		background-color: #2ECC71;
+
+	}
+	

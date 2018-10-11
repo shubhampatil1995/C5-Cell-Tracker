@@ -1,0 +1,1000 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>C5 Cell Tracker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <style type="text/css">
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        #map_canvas {
+          height: 100%;
+          width:100%;
+        }
+
+        #content
+        {
+          width: 270px;
+          background-color:green;
+          color:white;
+        }
+
+        /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+    
+        #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        }
+
+        #infowindow-content .title {
+        font-weight: bold;
+        }
+
+        #infowindow-content {
+        display: none;
+        }
+
+        #map #infowindow-content {
+        display: inline;
+        }
+
+        .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+        }
+
+        #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+        }
+
+        .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+        }
+
+        .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+        }
+
+        #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 60%;
+        margin-top: 5px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 20%;
+        }
+
+        #pac-input:focus {
+        border-color: #4d90fe;
+        }
+
+        #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+        }
+        #target {
+        width: 345px;
+        }
+                
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--<script type="text/javascript" src="http://maps.google.com.mx/maps/api/js?v=3"></script>--> <!-- ?&key=AIzaSyDTcUAabUdy75i8OpRkMhnBH5v0pn_swMs -->    
+<!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDTcUAabUdy75i8OpRkMhnBH5v0pn_swMs&sensor=false&libraries=geometry"></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDTcUAabUdy75i8OpRkMhnBH5v0pn_swMs&libraries=drawing"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body onload="initialize()">
+<script type="text/javascript">
+    var map;
+    var selectedShape;
+
+    var rectangleOrgPathString;
+
+    var infowindows = [];
+    var circles = [];
+    var monitorSitesPolygons = [];
+
+    var rectangle;
+    var category;
+    var polyLatLong = "";
+    var infoWindow = new google.maps.InfoWindow();
+    var drawingManager;
+    var map;
+    var type = "";
+    var clickedRow = 0;
+
+    var markers = [];
+    var marker = new google.maps.Marker;
+
+    var drawingManager;
+
+    var modal;
+    var span;
+    var btn;
+
+    window.onClickCreate = function (id) {
+        var firstPoint = "";
+        var fenceType = "";
+
+        var name = document.getElementById("txtName").value;
+        var description = document.getElementById("txtDescription").value;
+        var userID = document.getElementById("txtCreatedBy").value;
+
+        if (name == undefined || name == "") {
+            alert("Fence Name is invalid or cannot be empty.");
+            return;
+        }
+
+        if (description == undefined || description == "") {
+            alert("Fence Description is invalid or cannot be empty.");
+            return;
+        }
+
+        if (userID == undefined || userID == "") {
+            alert("User Name is invalid or cannot be empty.");
+            return;
+        }
+
+        var originalPath = polyLatLong;
+        var closedPath = "";
+
+        if (type == "POLYGON") {
+            fenceType = "POLYGON";
+            polyLatLong = "";
+            var polyPath = monitorSitesPolygons[0].getPath();
+            for (var i = 0; i < polyPath.getLength(); i++) {
+                var xy = polyPath.getAt(i);
+                if (polyLatLong != "") {
+                    polyLatLong += ',';
+                } else {
+                    firstPoint = xy.lat() + ' ' + xy.lng();
+                }
+                polyLatLong += xy.lat() + ' ' + xy.lng();
+            }
+            closedPath = polyLatLong + ',' + firstPoint;
+        }
+        else {
+            fenceType = "RECTANGLE";
+            originalPath = rectangleOrgPathString;
+            closedPath = polyLatLong;
+
+            var arr = rectangleOrgPathString.split(",");
+            firstPoint = arr[0];
+        }
+
+        //var geomLatLong = "GeomFromText('POLYGON((" + polyLatLong + ',' + firstPoint + "))')";
+
+        var isSaved = window.external.SaveFenceInDB(name, description, userID, fenceType, originalPath, closedPath, firstPoint);
+
+        if (isSaved == true) {
+            onClickCancel();
+            var points = [];
+            AutoCenter(points);
+            //getSearchResult();
+        }
+    }
+
+    window.onClickCancel = function () {
+        infoWindow.close();
+        rectangle.setMap(null);
+        for (var i = 0; i < monitorSitesPolygons.length; i++) {
+            monitorSitesPolygons[i].setMap(null);
+        }
+        monitorSitesPolygons = [];
+
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setMap(null);
+        }
+        markers = [];
+    }
+
+    window.onClickOpenModelForFenceCellSites = function () {
+        window.external.OpenModelForFenceCellSites();
+        modal.style.display = "block";
+    }
+
+    window.onClickFetchData = function () {
+        var selectedCountries = "";
+        var selContries = document.getElementById("selContries");
+        var chkShowOnlyISDCalls = document.getElementById("chkShowOnlyISDCalls");
+        var isCheckedOnlyISDCalls = chkShowOnlyISDCalls.checked;
+
+        if (isCheckedOnlyISDCalls) {
+            for (i = 0; i < selContries.options.length; i++) {
+                if (selContries.options[i].selected) {
+                    if (selectedCountries != undefined && selectedCountries != "")
+                        selectedCountries = selectedCountries + ",";
+
+                    selectedCountries = selectedCountries + selContries.options[i].value;
+                }
+            }
+        }
+        window.external.GetFenceData(isCheckedOnlyISDCalls, selectedCountries);
+    }
+
+    var mapLatLng; 
+    var mapZoom = 11;
+
+    function deletecook(name) {
+        var d = new Date();
+        document.cookie = name + ";expires=" + d.toGMTString() + ";" + ";";
+    }
+
+    function createCookie(name, value, days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        }
+        else {
+            var expires = "";
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+    }
+
+    function getCookie(c_name) {
+        var i, x, y, ARRcookies = document.cookie.split(";");
+        for (i = 0; i < ARRcookies.length; i++) {
+            x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+            y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+            x = x.replace(/^\s+|\s+$/g, "");
+            if (x == c_name) {
+                return unescape(y);
+            }
+        }
+    }
+
+    function MapZoomCookie(mapZoom) {
+        var fntcookie = getCookie("FromOtherPage_MapZoom");
+        if (fntcookie != null && fntcookie != "") {
+            deletecook("FromOtherPage_MapZoom");
+        }
+        fntcookie = mapZoom;
+        if (fntcookie != null && fntcookie != "") {
+            createCookie("FromOtherPage_MapZoom", fntcookie);
+        }
+    }
+
+    function FNT_FromOtherPage_latlngCookie(FNTLat, FNTLng) {
+        var fntcookie = getCookie("FNT_FromOtherPage_latlng");
+        if (fntcookie != null && fntcookie != "") {
+            deletecook("FNT_FromOtherPage_latlng");
+        }
+        fntcookie = FNTLat + "," + FNTLng;
+        if (fntcookie != null && fntcookie != "") {
+            createCookie("FNT_FromOtherPage_latlng", fntcookie);
+        }
+    }
+
+    function printMap() {
+        window.print();
+    }
+
+    function initialize() {
+        mapLatLng = new google.maps.LatLng(12.9667, 77.5667);
+
+        var linkedMapZoom;
+        try {
+            linkedMapZoom = getCookie("FromOtherPage_MapZoom");
+            if (linkedMapZoom == undefined) {
+                MapZoomCookie(11);
+            } else {
+                if (linkedMapZoom != null && linkedMapZoom != "") {
+                    mapZoom = parseInt(linkedMapZoom);
+                }
+            }
+        }
+        catch (e) {
+            //catch and just suppress error
+        }
+
+        var linkedlatlng;
+        try {
+            linkedlatlng = getCookie("FNT_FromOtherPage_latlng");
+            if (linkedlatlng == undefined) {
+                FNT_FromOtherPage_latlngCookie(12.9667, 77.5667);
+            } else {
+                if (linkedlatlng != null && linkedlatlng != "") {
+                    var linkedlatlngArr = linkedlatlng.split(",");
+                    var linkedlat = linkedlatlngArr[0];
+                    var linkedlng = linkedlatlngArr[1];
+                    mapLatLng = new google.maps.LatLng(linkedlat, linkedlng);
+                }
+            }
+        }
+        catch (e) {
+            //catch and just suppress error
+        } 
+
+        modal = document.getElementById('myModal');
+        span = document.getElementsByClassName("close")[0];
+        btn = document.getElementById("getRecord");
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        btn.onclick = function () {        
+            var selectedSP = document.getElementById('serviceProviderList').value;
+            var selectedState = document.getElementById('statesList').value;
+            window.external.GetFenceCellSites(selectedSP, selectedState);
+        }
+       
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+        {
+            zoom: mapZoom,
+            center: mapLatLng, // new google.maps.LatLng(12.9667, 77.5667),
+            mapTypeControlOptions: {
+                mapTypeIds: new Array(google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID, google.maps.MapTypeId.TERRAIN)
+            },
+            fullscreenControl: false,
+            mapTypeControl: true,
+            streetViewControl: true,
+            panControl: false,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.LEFT_BOTTOM
+            }
+        });
+
+        google.maps.event.addListener(map, 'center_changed', function () {
+            var mce = map.getCenter();
+            FNT_FromOtherPage_latlngCookie(mce.lat(), mce.lng());
+        });
+
+        google.maps.event.addListener(map, 'zoom_changed', function () {
+            var zoom = map.getZoom();
+            MapZoomCookie(zoom);
+        });
+
+        map.addListener('bounds_changed', function () {            
+//            var sw = map.getBounds().getCenter();
+//            FNT_FromOtherPage_latlngCookie(sw.lat(), sw.lng());
+        });
+
+        google.maps.event.addListener(map, 'click', function (event) {
+        });
+
+        try {
+            drawingManager = new google.maps.drawing.DrawingManager({
+                //drawingMode: google.maps.drawing.OverlayType.RECTANGLE,
+                drawingControl: true,
+				map: map,
+                drawingControlOptions: {
+                    position: google.maps.ControlPosition.TOP_CENTER,
+                    drawingModes: [
+                    //google.maps.drawing.OverlayType.MARKER,
+					//google.maps.drawing.OverlayType.CIRCLE,
+					google.maps.drawing.OverlayType.POLYGON,
+					//google.maps.drawing.OverlayType.POLYLINE,
+					google.maps.drawing.OverlayType.RECTANGLE
+				]
+                },
+                circleOptions: {
+                    fillColor: '#ffff00',
+                    fillOpacity: 1,
+                    strokeWeight: 5,
+                    clickable: false,
+                    editable: true,
+                    zIndex: 1
+                }
+            });
+            
+            google.maps.event.addListener(drawingManager, 'overlaycomplete', function (event) {
+
+                for (var i = 0; i < monitorSitesPolygons.length; i++) {
+                    monitorSitesPolygons[i].setMap(null);
+                }
+                monitorSitesPolygons = [];
+
+                for (var i = 0; i < markers.length; i++) {
+                    markers[i].setMap(null);
+                }
+                markers = [];
+
+                if (event.type == google.maps.drawing.OverlayType.RECTANGLE) {
+                    clearSelectedShape();
+
+                    var bounds = event.overlay.getBounds();
+                    //drawingManager.setDrawingMode(null);
+
+                    var ne = bounds.getNorthEast();
+                    var sw = bounds.getSouthWest();
+
+                    var latFrom = sw.lat().toFixed(8);
+                    var latTo = ne.lat().toFixed(8);
+                    var longFrom = sw.lng().toFixed(8);
+                    var longTo = ne.lng().toFixed(8);
+
+                    var bounds = new google.maps.LatLngBounds(
+			            new google.maps.LatLng(latFrom, longFrom),
+			            new google.maps.LatLng(latTo, longTo)
+		            );
+
+                    rectangle.set("bounds", bounds);
+                    rectangle.setMap(map);
+
+                    var newShape = event.overlay;
+                    newShape.type = event.type;
+                    newShape.setMap(null);
+
+                    var points = [];
+                    points.push(new google.maps.LatLng(latFrom, longFrom));
+                    points.push(new google.maps.LatLng(latTo, longTo));
+
+                    showNewRectInfoWindow();
+                    AutoCenter(points);
+
+                    //getSearchResult();
+                    //AutoCenter(points);
+                } else if (event.type == google.maps.drawing.OverlayType.POLYGON) {
+
+                    var paths = event.overlay.getPath();
+                    clearSelectedShape();
+
+                    type = "POLYGON";
+
+                    var newShape = event.overlay;
+                    newShape.type = event.type;
+                    newShape.setMap(null);
+
+                    polyLatLong = "";
+					var firstPoint = "";
+                    var points = [];
+
+                    for (var i = 0; i < paths.getLength(); i++) {
+                        var xy = paths.getAt(i);
+                        if (polyLatLong != "") {
+                            polyLatLong += ',';
+                        } else {
+				firstPoint = xy.lat() + ' ' + xy.lng();
+			}
+                        polyLatLong += xy.lat() + ' ' + xy.lng();
+                        points.push(new google.maps.LatLng(xy.lat(), xy.lng()));
+                    }
+					
+					
+                    var polygon = drawPolygonsOnMap(points, true);
+                    monitorSitesPolygons.push(polygon);
+                    //showNewPolyInfoWindow(polygon, null, false);
+					
+			// right code here for fetching towers
+		   polyLatLong = polyLatLong + "," + firstPoint;	
+		   //alert("" + polyLatLong);
+
+		    $.post("http://developersworld.co.in/trazer/WebTowers.php", {data: polyLatLong}, function(result){
+        		//alert(result);
+        		addMarker(result);
+    			});
+		
+		//window.location("http://developersworld.co.in/trazer/WebTowers.php?data="+polyLatLong);
+                    AutoCenter(points);
+
+                } else {
+                    clearSelectedShape();
+
+                    var newShape = event.overlay;
+                    newShape.type = event.type;
+                    setSelectedShape(newShape);
+
+                }
+            });
+        } catch (e) {
+            alert(e.Description);
+        }
+
+        rectangle = new google.maps.Rectangle({
+            //bounds: bounds,
+            map: map,
+            strokeColor: '#000000',
+            //strokeOpacity: 5,
+            strokeWeight: 1,
+            fillColor: '#1BFC06',
+            fillOpacity: 0.5,
+            //draggable: true,
+            editable: true
+        });
+        //google.maps.event.addListener(rectangle, 'bounds_changed', showNewRectInfoWindow);
+        google.maps.event.addListener(rectangle, 'click', rectangleClicked);
+        //window.external.OnGeoMapLoaded();
+    }
+
+    function showDrawingTools() {
+        onClickCancel();
+        drawingManager.setMap(map);
+    }
+
+    function hideDrawingTools() {
+        drawingManager.setMap(null);
+    }
+
+    function rectangleClicked() {
+//        if (monitorSitesPolygons[0].getEditable() == true) {
+//            showNewRectInfoWindow(monitorSitesPolygons[0]);
+//        } else {
+//            showNewRectInfoWindow(monitorSitesPolygons[0]);
+//        }
+    }
+
+    function drawPolygonsOnMap(paths, isEditable) {
+
+        var monitorSitesPolygon = new google.maps.Polygon({
+            paths: paths,
+            strokeColor: '#000000',
+            map: map,
+            //strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#1BFC06',
+            fillOpacity: 0.5,
+            //draggable: true,
+            editable: isEditable
+        });
+        //monitorSitesPolygon.setPaths(paths);
+        //monitorSitesPolygon.setMap(map);
+        google.maps.event.addListener(monitorSitesPolygon, 'click', polygonClicked);
+
+        if (isEditable == true) {
+            google.maps.event.addListener(paths, 'set_at', polygonChanged);
+            google.maps.event.addListener(paths, 'insert_at', polygonChanged);
+            google.maps.event.addListener(paths, 'remove_at', polygonChanged);
+        }
+        return monitorSitesPolygon;
+    }
+
+    function polygonChanged() {
+    }
+
+    function polygonClicked() {
+
+        if (monitorSitesPolygons[0].getEditable() == true) {
+            showNewPolyInfoWindow(monitorSitesPolygons[0], "", false);
+        } else {
+            showNewPolyInfoWindow(monitorSitesPolygons[0], "", true);
+        }
+    }
+
+    function showNewRectInfoWindow() {
+
+        var ne = rectangle.getBounds().getNorthEast();
+        var sw = rectangle.getBounds().getSouthWest();
+
+        var center = rectangle.getBounds().getCenter();        
+
+        var x1, x2, y1, y2;
+        x1 = ne.lat(); // .toFixed(8);
+        y1 = ne.lng();
+        x2 = sw.lat();
+        y2 = sw.lng();
+
+        rectangleOrgPathString = x1 + ' ' + y1 + ',' + x2 + ' ' + y1 + ',' + x2 + ' ' + y2 + ',' + x1 + ' ' + y2;
+        polyLatLong = x1 + ' ' + y1 + ',' + x2 + ' ' + y1 + ',' + x2 + ' ' + y2 + ',' + x1 + ' ' + y2 + ',' + x1 + ' ' + y1;
+
+        var userID = "Admin"; //  "<?=$_GET['UserID']?>";
+        var contentString = '<div style="width:500px; height:Auto;"><b>Geofence details:</b><br><br>' +
+		  '<b>Name : </b><input style="margin-left:10%; margin-right:2%; width:60%;" type="text" id="txtName" placeholder="Geo Fence Name" /><br>' +
+		  '<b>Description : <input style="margin-left:4%; width:60%;" type="text" id="txtDescription" placeholder="Description" /><br>' +
+		  '<b>Created By : </b><input style="margin-left:4%; width:60%;" type="text" id="txtCreatedBy" placeholder="Created By" value=' + userID + ' readonly/><br><br>' +
+		  '<button onclick="onClickCreate()" class="btn btn-primary" id="button-create">Create</button><button onclick="onClickCancel()" style="margin-left: 5px;" class="btn btn-primary" id="button-cancel">Cancel</button>' +
+		  '</div>'
+		;
+
+        // Set the info window's content and position.
+        //infowindows.push(infowindow);
+        infoWindow.setContent(contentString);
+
+        infoWindow.setPosition(center);
+        //infoWindow.setPosition(sw);
+        infoWindow.open(map);
+    }
+
+    window.ShowHideContries = function () {
+        var checkBox = document.getElementById("chkShowOnlyISDCalls");
+        var selContries = document.getElementById("selContries");
+        if (checkBox.checked == true) {
+            window.external.LoadCountries();
+            selContries.style.display = "inline-block";
+            for (var i = 0; i < selContries.options.length; i++) {
+                selContries.options[i].selected = true;
+            }
+        } else {
+            selContries.style.display = "none";
+        }
+    }
+
+    window.selContriesSelected = function () {
+        var selContries = document.getElementById("selContries");
+        if (selContries.value == "<<Select All>>") {
+            for (var i = 0; i < selContries.options.length; i++) {
+                selContries.options[i].selected = true;
+            }
+        }
+    }
+
+    function showNewPolyInfoWindow(polygon, data, isReadOnly) {
+
+        var paths = polygon.getPath();
+        var points = [];
+
+        for (var i = 0; i < paths.getLength(); i++) {
+            var xy = paths.getAt(i);
+            points.push(new google.maps.LatLng(xy.lat(), xy.lng()));
+        }
+
+        var bounds = new google.maps.LatLngBounds();
+        for (i = 0; i < points.length; i++) {
+            bounds.extend(points[i]);
+        }        
+
+        var id = 0;
+        var fenceName = "";
+        var description = "";
+        var createdBy = "";
+        var createdDT = "";
+
+        if (data != null && data != "") { 
+            id = data[0];
+            fenceName = data[1];
+            description = data[2];
+            createdBy = data[3];
+            createdDT = data[4];
+        } else if (isReadOnly == true) {  // New code to avoid blank information popup
+            return;
+        }
+
+        var contentString = "";
+        var userID = "Admin"; //  "<?=$_GET['UserID']?>";
+        if (isReadOnly == true) {
+            contentString = '<div style="width:550px; height:Auto;"><b>Geofence details:</b><br><br>' +
+		      '<b>Name : </b>' + fenceName + '<br>' +
+		      '<b>Description : ' + description + '<br>' +
+		      '<b>Created By : </b>' + createdBy + '<span style="display:inline-block; width: 25%;"></span><b>Created Date : </b>' + createdDT + '<br><br>' +
+		      '<button onclick="onClickOpenModelForFenceCellSites()" class="btn btn-primary" id="button-fetchCellIDs">Fetch Cell IDs</button><button onclick="onClickFetchData()" style="margin-left: 5px;" class="btn btn-primary" id="button-fetchData">Fetch Data</button>' +
+		      '<input type="checkbox" id="chkShowOnlyISDCalls" name="chkShowOnlyISDCalls" style="margin-left: 30px;" onclick="ShowHideContries()"> Show only ISD calls' +
+			  '<select id="selContries" name="selContries" style="margin-left: 5px; height:100px; width:150px; display:none" onclick="selContriesSelected()" multiple>' +
+			  '</select>' +
+              '</div>'
+		    ;
+        } else {
+            contentString = '<div style="width:500px; height:Auto;"><b>Geofence details:</b><br><br>' +
+		      '<b>Name : </b><input style="margin-left:10%; margin-right:2%; width:60%;" type="text" id="txtName" placeholder="Geo Fence Name" /><br>' +
+		      '<b>Description : <input style="margin-left:4%; width:60%;" type="text" id="txtDescription" placeholder="Description" /><br>' +
+		      '<b>Created By : </b><input style="margin-left:4%; width:60%;" type="text" id="txtCreatedBy" placeholder="Created By" value=' + userID + ' readonly/><br><br>' +
+		      '<button onclick="onClickCreate()" class="btn btn-primary" id="button-create">Create</button><button onclick="onClickCancel()" style="margin-left: 5px;" class="btn btn-primary" id="button-cancel">Cancel</button>' +
+		      '</div>'
+		    ;
+        }
+        // Set the info window's content and position.
+        //infowindows.push(infowindow);
+
+        infoWindow.setContent(contentString);
+        infoWindow.setPosition(bounds.getCenter());
+        infoWindow.open(map);
+
+        AutoCenter(points);
+    }
+
+    function plotFenceOnMap(fences) {
+        hideDrawingTools();
+        try { 
+            var delimiter = "$$$$";
+            var del = "$$$";
+
+            var polyPath;
+            var firstPoint;
+            var fenceName;
+            var description;
+            var createdBy;
+            var createdDate;
+            var i = 0;           
+
+            for (i = 0; i < monitorSitesPolygons.length; i++) {
+                monitorSitesPolygons[i].setMap(null);
+            }
+            monitorSitesPolygons = [];
+
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(null);
+            }
+            markers = [];
+
+            var tempFences = fences.split(delimiter);
+            var points = [];
+
+            for (i = 0; i < tempFences.length; i++) {
+                if (tempFences[i] != null) {
+                    var arr = tempFences[i].split(del);
+
+                    polyPath = arr[0];
+                    firstPoint = arr[1];
+                    fenceName = arr[2];
+                    description = arr[3];
+                    createdBy = arr[4];
+                    createdDate = arr[5];
+
+                    var point = stringToPolygonPaths(polyPath);
+                    points.push(point);
+                    var polygon = drawPolygonsOnMap(point, false);
+                    monitorSitesPolygons.push(polygon);
+
+                    var data = [];
+                    data[0] = "";
+                    data[1] = fenceName;
+                    data[2] = description;
+                    data[3] = createdBy;
+                    data[4] = createdDate;
+
+                    showNewPolyInfoWindow(polygon, data, true);
+                }
+            }            
+            
+        } catch (e) {
+            alert(e.Description);
+        }
+    }
+
+    function stringToPolygonPaths(sourceString) {
+        var splittedSourcePath = sourceString.split(',');
+        var paths = [];
+        for (var i = 0; i < splittedSourcePath.length; i++) {
+            var path = splittedSourcePath[i].split(' ');
+            paths.push(new google.maps.LatLng(path[0], path[1]));
+        }
+        return paths;
+    }    
+
+    function addMarker(pushpins) {
+        var delimiter = "$$$$";
+        var del = "$$$";
+        var lat;
+        var lng;
+        var txt;
+        var azimuth;
+
+        modal.style.display = "none";
+
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setMap(null);
+        }
+        markers = [];        
+
+        var tempPushpins = pushpins.split(delimiter);
+        var points = [];
+
+        for (i = 0; i < tempPushpins.length; i++) {
+            if (tempPushpins[i] != null) {
+                var arr = tempPushpins[i].split(del);
+                lat = arr[0];
+                lng = arr[1];
+                txt = arr[2];
+                azimuth = arr[3];
+
+                var latLng = new google.maps.LatLng(lat, lng);
+                var toolTipText = '<div width="300px"><b><font size=' + "'2'" + 'Color=' + "'red'" + '>' + lat + ", " + lng + '</font></b><br>' + txt + '</div>';
+
+                marker = new google.maps.Marker
+                ({
+                    position: latLng,
+                    map: map,
+                    //draggable: true,
+                    //animation: google.maps.Animation.DROP,
+                    title: "Click to show more information."
+                });
+
+                points.push(new google.maps.LatLng(lat, lng));
+                markers.push(marker);
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        showTooltip(tempPushpins[i], i);
+                    }
+                })(marker, i));
+
+//                if (azimuth != 0)
+//                    showAzimuth(latLng, azimuth);
+
+            }
+        }
+
+        infoWindow.close();
+        AutoCenter(points);
+        //endDragMarkerCS(lat, lng);
+    }
+
+    function showTooltip(tempPushpins, index) {
+
+        for (var i = 0; i < infowindows.length; i++) {
+            infowindows[i].close();
+        }
+
+        var infowindow = new google.maps.InfoWindow({
+            maxWidth: 350
+        });
+
+        var arr = tempPushpins.split("$$$");
+        lat = arr[0];
+        lng = arr[1];
+        txt = arr[2];
+
+        var toolTipText = '<div width="300px"><b><font size=' + "'2'" + 'Color=' + "'red'" + '>' + lat + ", " + lng + '</font></b><br>' + txt + '</div>';
+
+        infowindows.push(infowindow);
+        infowindow.setContent(toolTipText);
+        infowindow.open(map, markers[index]);
+    }
+
+    function AutoCenter(points) {
+        //  Create a new viewpoint bound
+        try {
+            var bounds = new google.maps.LatLngBounds();
+            //  Go through each...
+            if (points.length > 0) {
+                for (var i = 0; i < points.length; i++) {
+                    bounds.extend(points[i]);
+                }
+                map.fitBounds(bounds);
+            }
+            else {
+                bounds.extend(new google.maps.LatLng(12.9667, 77.5667));
+                map.fitBounds(bounds);
+                google.maps.event.addListenerOnce(map, 'bounds_changed', function (event) {
+                    if (map.getZoom() > 12) {
+                        map.setZoom(12);
+                    }
+                });
+            }
+        }
+        catch (e) {
+            alert(e.Description);
+        }
+    }
+
+    function clearSelectedShape() {
+        if (selectedShape) {
+            selectedShape.setMap(null);
+        }
+    }
+
+    function setSelectedShape(shape) {
+        selectedShape = shape;
+    }
+    
+    function fillSPsAndStates(SPs, _states) {
+        var delimiter = "$$$";
+
+        var tempSPs;
+        if (SPs != null && SPs !== "") {
+            tempSPs = SPs.split(delimiter);
+           
+            var spList = document.getElementById('serviceProviderList');
+            for (i = 0; i < tempSPs.length; i++) {
+                var opt = document.createElement('option');
+                opt.innerHTML = tempSPs[i];
+                opt.value = tempSPs[i];
+                spList.appendChild(opt);                
+            }
+        }
+
+        var tempStates;
+        if (_states != null && _states !== "") {
+            tempStates = _states.split(delimiter);
+
+            var stateList = document.getElementById('statesList');
+            for (i = 0; i < tempStates.length; i++) {
+                var opt = document.createElement('option');
+                opt.innerHTML = tempStates[i];
+                opt.value = tempStates[i];
+                stateList.appendChild(opt); 
+            }
+        }
+    }
+
+    function fillCountries(countries) {
+        var delimiter = "$$$";
+
+        var tempCountries;
+        if (countries != null && countries !== "") {
+            tempCountries = countries.split(delimiter);
+
+            var countriesList = document.getElementById('selContries');
+            for (i = 0; i < tempCountries.length; i++) {
+                var opt = document.createElement('option');
+                opt.innerHTML = tempCountries[i];
+                opt.value = tempCountries[i];
+                countriesList.appendChild(opt);
+            }
+        }
+    } 
+    
+</script>
+  		
+	  <div id="map_canvas"></div>
+	
+	      <!-- The Modal -->
+	    <div id="myModal" class="modal">
+	
+	      <!-- Modal content -->
+	      <div class="modal-content">
+	        <span class="close">&times;</span>
+	        Service Provider : <br/>
+	        <select id="serviceProviderList" style="width:80%;"></select>
+	        <br/><br/>
+	        State : <br/>
+	        <select id="statesList" style="width:80%;"></select>
+	        <br/><br/>
+	        <button id="getRecord">Get Record</button>
+	      </div>
+	
+	    </div>
+	 </div>
+	
+</body>
+</html> 

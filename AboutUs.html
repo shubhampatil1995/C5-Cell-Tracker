@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Prosoft-E-Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #0d0d0d;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 20px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 20px;
+  }  
+  .jumbotron {
+      background-color: #1E90FF;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 10px 30px;
+	  font-family : Montserrat;
+
+  }
+  .bg-grey {
+      background-color: #F5F5F5;
+  }
+  .logo-small {
+      color: #1E90FF;
+      font-size: 50px;
+  }
+  .logo {
+      color: #1E90FF;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 16px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #1E90FF;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #1E90FF;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1E90FF !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1E90FF;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Prosoft-E-Solutions Pvt Ltd.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>WELCOME TO PROSOFT</h1> 
+  
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>About PROSOFT</h2><br>
+      <h4>Prosoft e-Solutions India Pvt. Ltd. is a research based software development company committed to delivering world class software and enterprise solutions. We add value to your organization by our domain expertise and capability to handle big data.</h4><br>
+      <h4>Big Data Age: We all live in BIG DATA age where the capability of organization to handle big data plays a key role in determining the success and growth of the organizations. Our expertise in handling big data will give your organization a distinct advantage in making smarter decisions.</h4>
+	  <h4>Customer centric approach: We engage with our customers at every level of product development so our customers are not only involved in product development but actually shape how a specific feature works.</h4>
+	  <h4>We have entered a Modern Era of Crime Fighting, wherein Crime & Criminals have become Sophisticated & the Sheer Volume of CDR Data is Mind Boggling. The reasons for the Same Being, INDIA’s Population Coupled with factors like Cheap Handset & Internet & Ease of Telecom Connectivity. The Escalated, Crime Incidences & also the use of CDR Data Analysis for Crime Fighting is the Need of the hour.</h4>
+	  <h4>We at Prosoft E-Solutions hold, Almost a Decade of Experience in CDR Analysis Solutions. We understand the Dynamics of the Modern Day Crime Fighting that Indian Investigative Agencies, Faces and Recognize the Absolute need to use this technology for Crime Busting. CDR Analysis can be used for a Variety of Functions like Crime Investigation, Surveillance, and Enquiry. Apart from its Important Role in Crime Investigation, a lot of crimes can be prevented by Monitoring and using CDR data judicially. The Information Gathered after CDR analysis can be used in Multiple Number of Ways like, to Corroborate Information from other sources (eye witness video footage etc) , to
+Profile a person, Useful for Interrogation, Setting up Surveillance etc.</h4>
+	  <h4>We are also aware of the Changing Scenario in which Criminals are now more aware of the Methods and Technologies used by Investigation Officers, so they are Adopting Innovative Methods for Deception. e.g. Like using Multiple Number of SIM cards , Changing Handset Frequently, and Restricting themselves to use Mobile only when urgently required or Using Burners, in Which a Cheap Handset & Simcard is Procured on False Documentation, Used in Committing a Crime & then Disposed off, Leaving Faint Trails which are Difficult to Follow.</h4>
+	  <h4>A CDR Analysis Software Comes to the Rescue in Such cases where Leads are Negligible & Linking the Accused to the Crime & Tracking Associates becomes a Daunting Task for the Investigating Officer.</h4>
+      <br>
+    </div>
+  
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <h4><strong>VISION:</strong> Our Vision is to provide excellent software solutions at affordable prices to all forms of businesses, to help grip the operations with ease and expand their business by using the latest state of art software technology.</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>C5 CDR ANALYZER</h4>
+      <p>C5 CDR Analyzer 4.0 is designed to handle Big Data. It quickly processes terabytes of data, billions of records on a low end server within seconds. Enables Investigating officers get the desired result set in small amount of time. Collects data from various types of file formats and MS SQL Server database as well. 
+Powerful and interactive visual analytics: C5 CDR Analyzer 4.0 is designed for interactive data visualization which enables Investigating Officers to visually interrogate the data using various types of graphics such as forced, circular, timeline etc. </p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>HealthSoft</h4>
+      <p>The road to health is the road to wealth. Just as the building of a national superhighway shall enhance commerce and save India overRs.8000 crores a year, the building of information superhighway for healthcare in the State of Karnataka shall save lives. This lives of our producive citizens are truly priceless. Our Society will be strengthened and the burden on our health resource shall be lightened.</p>
+	  <p>The core of this proposal is the establishment of a health tracking and reporting system for the entire Government of Karnataka Healthcare System. This system would work synergistically with all the other eGoverenance initiatives.</p>
+	</div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Enterprise Resource Planning</h4>
+      <p>Solutions that support your company’s business goals and practices are not out of your reach! Prosoft Computers has the new solutions and support offerings that open up applications you previously thought would be impossible with your company’s budget or timeframe.</p>
+	 Prosoft Business Software is a flexible ERP standard which will optimize your business process from purchasing and sales to production, warehouse management and financial accounting. Additional more there are various optional Web Applications available with Prosoft Business Software. <p></p>
+	</div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>Fleet Management</h4>
+      <p>eMTS 2.0, Client – Server technology embedded Fleet management Software under windows platform empowers you to have a firm control over your entire Motor Transport section and day to day schedules. Our Integrated multi level modular approach addressed all sides of the MT section and provides reliable information to plan, manage and analyze to the concerned officer in required format.</p>
+      <p>eMTS stands ahead in data security and reliability. It is designed and programmed to adopt time to time changes in working environment and ensure smooth and efficient operation. eMTS is user friendly, expandable and affordable.</p>
+	</div>
+    <div class="col-sm-6">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>Payroll</h4>
+      <p>ePAY unique approach along with your expertise can create an atmosphere where you are able to make the difference.</p>
+	  <p>Payroll management is a complex process due to a large number of calculations and statutory compliance requirements. You need a stress-free solution that is accurate, fully baked and very secure.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact info ) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-left">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> #303 3rd Floor , BEL HEIGHTS Apartment, Plot No: 26
+CTS No. 2523/2 Noamaniya Colony, Azam Nagar , Belagavi, Karnataka, India - 590010</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  +91-9019858560 / +91-7090773306 / +91-7090773360</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>  care@prosoftesolutions.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+		<div id="googleMap" style="height:400px;width:100%;"></div>
+		<script>
+		function myMap() {
+		var myCenter = new google.maps.LatLng(15.8879779,74.5140398);
+		var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker = new google.maps.Marker({position:myCenter});
+		marker.setMap(map);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDTcUAabUdy75i8OpRkMhnBH5v0pn_swMs&callback=myMap"></script>
+	
+	
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+   <p>Made By Prosoft-E-Solutions Pvt Ltd.</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

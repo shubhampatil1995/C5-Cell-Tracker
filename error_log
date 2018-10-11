@@ -1,0 +1,671 @@
+[10-Apr-2018 04:23:34 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/UserLogin.php on line 10
+[10-Apr-2018 04:23:55 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:23:55 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 04:23:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:23:55 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:24:34 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:24:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:24:34 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:25:27 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:25:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:25:27 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:25:50 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:25:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:26:33 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:26:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:26:33 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:26:46 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:26:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:26:46 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:30:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:30:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:30:04 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:34:31 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:34:31 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 04:34:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:34:31 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:34:31 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:34:31 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 04:34:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:34:31 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:37:03 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:37:03 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 04:37:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:37:03 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:37:30 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:37:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:37:30 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:38:00 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:38:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:38:00 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:39:47 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:39:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:40:03 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:40:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/devamol1988/public_html/trazer/validateuser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:40:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/devamol1988/public_html/trazer/validateuser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:41:08 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:41:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:41:56 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:41:56 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:41:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 15
+[10-Apr-2018 04:42:03 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:42:03 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 04:42:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:42:03 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 15
+[10-Apr-2018 04:43:31 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:43:31 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 10
+[10-Apr-2018 04:43:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:43:31 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 16
+[10-Apr-2018 04:43:35 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:43:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 14
+[10-Apr-2018 04:43:35 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 16
+[10-Apr-2018 04:49:02 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'society_testing'@'localhost' to database 'samplevege' in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 04:49:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 04:49:02 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 15
+[10-Apr-2018 05:27:20 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'trazer2018'@'localhost' to database 'samplevege' in /home/devamol1988/public_html/trazer/validateuser.php on line 7
+[10-Apr-2018 05:27:20 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 05:27:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/devamol1988/public_html/trazer/validateuser.php on line 13
+[10-Apr-2018 05:27:20 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 15
+[10-Apr-2018 05:28:02 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 05:28:02 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/validateuser.php on line 15
+[10-Apr-2018 05:29:37 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 05:29:54 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 05:30:39 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 05:30:57 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 05:33:45 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:14:26 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:16:07 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:19:32 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:25:37 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:47:27 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:47:27 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:47:39 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:47:39 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:48:26 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:48:26 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:48:27 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[10-Apr-2018 07:48:27 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:48:42 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:48:58 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:49:26 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 07:52:24 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[10-Apr-2018 16:37:58 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[11-Apr-2018 06:15:40 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:15:54 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:19:52 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:19:52 UTC] PHP Notice:  Array to string conversion in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[11-Apr-2018 06:20:22 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:21:14 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:21:14 UTC] PHP Notice:  Array to string conversion in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[11-Apr-2018 06:24:08 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:24:08 UTC] PHP Notice:  Undefined variable: myArray in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[11-Apr-2018 06:24:24 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:24:38 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:24:38 UTC] PHP Notice:  Undefined variable: myArray in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[11-Apr-2018 06:27:02 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:27:02 UTC] PHP Notice:  Array to string conversion in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[11-Apr-2018 06:27:17 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:28:08 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:35:14 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:35:14 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:35:14 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 11
+[11-Apr-2018 06:49:50 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 06:50:40 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/sdrdetails.php on line 8
+[11-Apr-2018 10:02:43 UTC] PHP Notice:  Array to string conversion in /home/devamol1988/public_html/trazer/sdrdetails.php on line 53
+[12-Apr-2018 06:07:36 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/validateuser.php on line 9
+[12-Apr-2018 06:07:36 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/validateuser.php on line 11
+[12-Apr-2018 06:12:02 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 07:09:23 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 10:01:36 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 10:03:50 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 10:07:07 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 10:10:00 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 10:11:07 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:27:32 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:29:31 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:31:00 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:38:00 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:38:42 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:39:17 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:40:52 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:42:02 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:42:26 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[12-Apr-2018 11:44:03 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:45:57 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[12-Apr-2018 11:47:04 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[13-Apr-2018 07:46:16 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[13-Apr-2018 07:57:59 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[13-Apr-2018 07:58:17 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[13-Apr-2018 07:58:54 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[13-Apr-2018 07:59:20 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[13-Apr-2018 07:59:47 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[16-Apr-2018 05:09:50 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[16-Apr-2018 06:28:25 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[16-Apr-2018 06:28:28 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[17-Apr-2018 06:50:28 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[26-Apr-2018 13:59:13 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Apr-2018 15:48:49 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 11
+[29-Apr-2018 15:48:49 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:49:31 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 11
+[29-Apr-2018 15:49:31 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:49:38 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 11
+[29-Apr-2018 15:49:38 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:50:37 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 11
+[29-Apr-2018 15:50:37 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:51:19 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 11
+[29-Apr-2018 15:51:19 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:52:00 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 15:52:00 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[29-Apr-2018 15:52:01 UTC] PHP Notice:  Undefined index: cell_id in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:52:01 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 15:52:01 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[29-Apr-2018 15:56:30 UTC] PHP Notice:  Undefined index: cell_id in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[29-Apr-2018 15:56:30 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 15:56:30 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[29-Apr-2018 15:58:28 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 15:59:32 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 16:02:23 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 16:02:48 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 16:03:11 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 16:05:24 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 16:12:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/devamol1988/public_html/trazer/towerdetails.php on line 59
+[29-Apr-2018 16:12:59 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/devamol1988/public_html/trazer/towerdetails.php on line 58
+[29-Apr-2018 17:01:41 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[29-Apr-2018 17:01:48 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[30-Apr-2018 06:29:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[07-May-2018 10:33:59 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[07-May-2018 10:33:59 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[07-May-2018 10:33:59 UTC] PHP Notice:  Undefined index: radius in /home/devamol1988/public_html/trazer/fetchtowers.php on line 11
+[09-May-2018 06:43:27 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[09-May-2018 06:43:27 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[09-May-2018 06:59:29 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[09-May-2018 06:59:29 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[09-May-2018 06:59:31 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[09-May-2018 06:59:31 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[09-May-2018 07:40:35 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[09-May-2018 07:40:35 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[09-May-2018 08:26:40 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[09-May-2018 08:26:40 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[09-May-2018 08:26:40 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[09-May-2018 08:26:40 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[10-May-2018 11:48:40 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[10-May-2018 11:48:44 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[10-May-2018 11:48:55 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[10-May-2018 11:49:17 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[12-May-2018 08:03:57 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-May-2018 08:03:57 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[12-May-2018 08:04:21 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-May-2018 08:04:21 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[12-May-2018 08:07:27 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-May-2018 08:07:27 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[12-May-2018 08:08:01 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-May-2018 08:08:01 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[16-May-2018 05:01:36 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[16-May-2018 05:01:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[16-May-2018 05:02:07 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[21-May-2018 05:11:39 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[21-May-2018 05:12:21 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[21-May-2018 05:13:38 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[21-May-2018 05:15:24 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[21-May-2018 05:15:48 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[21-May-2018 05:16:50 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[21-May-2018 05:17:03 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[21-May-2018 05:17:05 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[21-May-2018 05:17:05 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 25
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 26
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 27
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 28
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 29
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 30
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 43
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 44
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 45
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 46
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 47
+[25-May-2018 09:14:59 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 48
+[25-May-2018 09:18:09 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 25
+[25-May-2018 09:18:09 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 26
+[25-May-2018 09:18:09 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 27
+[25-May-2018 09:18:09 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 28
+[25-May-2018 09:18:09 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 29
+[25-May-2018 09:18:09 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 30
+[25-May-2018 09:22:28 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 25
+[25-May-2018 09:22:28 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 27
+[25-May-2018 09:22:28 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 28
+[25-May-2018 09:22:28 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 29
+[25-May-2018 09:22:28 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 30
+[25-May-2018 09:23:29 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 25
+[25-May-2018 09:23:29 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 25
+[25-May-2018 09:23:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 27
+[25-May-2018 09:23:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 28
+[25-May-2018 09:23:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 29
+[25-May-2018 09:23:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 30
+[25-May-2018 09:24:45 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 43
+[25-May-2018 09:24:45 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 44
+[25-May-2018 09:24:45 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 45
+[25-May-2018 09:24:45 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 46
+[25-May-2018 09:24:45 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 47
+[25-May-2018 09:24:45 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 48
+[25-May-2018 09:24:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 43
+[25-May-2018 09:24:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 44
+[25-May-2018 09:24:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 45
+[25-May-2018 09:24:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 46
+[25-May-2018 09:24:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 47
+[25-May-2018 09:24:51 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 48
+[25-May-2018 09:26:12 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 43
+[25-May-2018 09:26:12 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 44
+[25-May-2018 09:26:12 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 45
+[25-May-2018 09:26:12 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 46
+[25-May-2018 09:26:12 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 47
+[25-May-2018 09:26:12 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/imeidetails.php on line 48
+[25-May-2018 11:05:54 UTC] PHP Notice:  Undefined index: imei_number in /home/devamol1988/public_html/trazer/imeidetails.php on line 12
+[30-May-2018 10:55:08 UTC] PHP Notice:  Undefined index: name in /home/devamol1988/public_html/trazer/trazer_register.php on line 9
+[30-May-2018 10:55:08 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/trazer_register.php on line 10
+[30-May-2018 10:55:08 UTC] PHP Notice:  Undefined index: email in /home/devamol1988/public_html/trazer/trazer_register.php on line 11
+[30-May-2018 10:55:08 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 12
+[30-May-2018 10:55:08 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:16:46 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:20:42 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:23:10 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:25:11 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:27:51 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:33:15 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:37:20 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:53:07 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 04:55:02 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 05:03:25 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 05:04:38 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 05:07:26 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 05:46:56 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 05:53:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/devamol1988/public_html/trazer/trazer_login.php on line 34
+[31-May-2018 05:54:03 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/devamol1988/public_html/trazer/trazer_login.php on line 34
+[31-May-2018 05:55:27 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/devamol1988/public_html/trazer/trazer_login.php on line 34
+[31-May-2018 06:03:33 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 06:22:18 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 06:25:36 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 06:29:19 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 06:29:51 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 06:32:48 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 07:54:14 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/devamol1988/public_html/trazer/trazer_login.php on line 13
+[31-May-2018 08:11:14 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 08:25:47 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 08:25:55 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 08:29:15 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 09:20:34 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 09:24:11 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 09:43:03 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 10:19:14 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 10:19:14 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 10:22:11 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 10:22:15 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 11:37:00 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 11:37:04 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[31-May-2018 11:38:29 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:38:13 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:43:21 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:43:29 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:43:33 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:45:12 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:47:36 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:47:39 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:50:07 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:50:13 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 04:51:16 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:01:54 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:02:08 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:02:16 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:03:57 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:04:54 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:06:27 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:06:30 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:06:35 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:08:17 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:08:20 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:08:23 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:08:26 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:09:08 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/devamol1988/public_html/trazer/trazer_register.php on line 18
+[01-Jun-2018 05:09:26 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/devamol1988/public_html/trazer/trazer_register.php on line 18
+[01-Jun-2018 05:10:03 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:10:56 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:11:25 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:12:28 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:13:21 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:13:25 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:13:25 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:13:36 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:13:47 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:16:20 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:20:12 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:27:50 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[01-Jun-2018 05:52:06 UTC] PHP Notice:  Undefined index: mobile in /home/devamol1988/public_html/trazer/trazer_login.php on line 9
+[01-Jun-2018 05:52:06 UTC] PHP Notice:  Undefined index: device_no in /home/devamol1988/public_html/trazer/trazer_login.php on line 10
+[01-Jun-2018 05:52:50 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[04-Jun-2018 10:11:10 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[04-Jun-2018 10:15:57 UTC] PHP Notice:  Undefined index: cell_id in /home/devamol1988/public_html/trazer/towerdetails.php on line 12
+[04-Jun-2018 10:15:57 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[04-Jun-2018 10:15:57 UTC] PHP Notice:  Undefined index: service_provider in /home/devamol1988/public_html/trazer/towerdetails.php on line 15
+[09-Jun-2018 07:44:21 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 13
+[09-Jun-2018 07:44:21 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 07:45:56 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 13
+[09-Jun-2018 07:45:56 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 07:49:07 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 13
+[09-Jun-2018 07:49:07 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 07:49:53 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 07:50:23 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 07:52:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 07:52:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 07:53:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 07:54:17 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 13
+[09-Jun-2018 07:54:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 21
+[09-Jun-2018 07:54:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 21
+[09-Jun-2018 07:54:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 07:55:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 21
+[09-Jun-2018 07:56:50 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 24
+[09-Jun-2018 07:57:28 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 24
+[09-Jun-2018 08:06:33 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 13
+[09-Jun-2018 08:06:33 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 24
+[09-Jun-2018 08:06:48 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 24
+[09-Jun-2018 08:09:32 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 13
+[09-Jun-2018 08:09:32 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/ipdetails.php on line 24
+[09-Jun-2018 08:13:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 08:13:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 08:44:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 08:44:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function CONVERT() in /home/devamol1988/public_html/trazer/ipdetails.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 09:04:45 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 09:06:40 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 09:07:13 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 09:07:46 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 09:08:06 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 15
+[09-Jun-2018 09:08:42 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 15
+[09-Jun-2018 09:08:56 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 15
+[09-Jun-2018 09:08:57 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 15
+[09-Jun-2018 09:11:21 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:12:52 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:13:22 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:14:02 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:14:10 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:17:20 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:17:25 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:20:53 UTC] PHP Parse error:  Invalid numeric literal in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:26:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/devamol1988/public_html/trazer/ipdetails.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:26:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/devamol1988/public_html/trazer/ipdetails.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:26:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/devamol1988/public_html/trazer/ipdetails.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/devamol1988/public_html/trazer/ipdetails.php on line 18
+[09-Jun-2018 09:28:00 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:28:00 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:28:00 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:28:00 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:07 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:07 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:07 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:07 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:22 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:40 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:40 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:40 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:29:40 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 19
+[09-Jun-2018 09:30:42 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/devamol1988/public_html/trazer/ipdetails.php on line 20
+[09-Jun-2018 09:33:06 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:33:06 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:33:06 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:33:06 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:33:06 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:34:36 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:34:36 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:34:36 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:34:36 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:34:36 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:35:13 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:35:13 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:35:13 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:35:13 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:35:13 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:01 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:36:01 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:01 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:01 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:01 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:34 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:36:34 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:34 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:34 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:34 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:41 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:36:41 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:41 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:41 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:36:41 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:37:07 UTC] PHP Notice:  Undefined index: id_address in /home/devamol1988/public_html/trazer/ipdetails.php on line 11
+[09-Jun-2018 09:37:07 UTC] PHP Notice:  Undefined offset: 3 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:37:07 UTC] PHP Notice:  Undefined offset: 2 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:37:07 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[09-Jun-2018 09:37:07 UTC] PHP Warning:  A non-numeric value encountered in /home/devamol1988/public_html/trazer/ipdetails.php on line 22
+[23-Jun-2018 11:24:59 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[29-Jun-2018 06:03:49 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:03:49 UTC] PHP Notice:  Undefined index: status in /home/devamol1988/public_html/trazer/sdrdetails.php on line 46
+[29-Jun-2018 06:05:15 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:05:15 UTC] PHP Notice:  Undefined index: status in /home/devamol1988/public_html/trazer/sdrdetails.php on line 46
+[29-Jun-2018 06:19:09 UTC] PHP Notice:  Undefined index: number in /home/devamol1988/public_html/trazer/sdrdetails.php on line 12
+[29-Jun-2018 06:19:09 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:39:38 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:41:02 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:41:47 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:43:07 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:44:24 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:45:23 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:45:52 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:46:57 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:47:06 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:48:55 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:50:02 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:50:18 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:50:54 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:51:33 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:52:25 UTC] PHP Notice:  Undefined index: dummy in /home/devamol1988/public_html/trazer/sdrdetails.php on line 13
+[29-Jun-2018 06:55:03 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[29-Jun-2018 06:59:37 UTC] PHP Notice:  Trying to get property of non-object in /home/devamol1988/public_html/trazer/sdrdetails.php on line 21
+[03-Jul-2018 11:54:20 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[09-Jul-2018 11:41:12 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[09-Jul-2018 11:41:27 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[09-Jul-2018 11:54:28 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[09-Jul-2018 11:54:40 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[09-Jul-2018 11:54:45 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:31:21 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:35:26 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:35:54 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:36:16 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:36:55 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:38:44 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:41:11 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[10-Jul-2018 12:41:53 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-Jul-2018 06:38:30 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-Jul-2018 06:39:28 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[12-Jul-2018 11:54:48 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[12-Jul-2018 11:54:48 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[12-Jul-2018 12:26:46 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[16-Jul-2018 04:43:05 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[16-Jul-2018 13:02:25 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[17-Jul-2018 11:08:03 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 3
+[17-Jul-2018 11:08:47 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 3
+[17-Jul-2018 11:45:37 UTC] PHP Notice:  Undefined index: cell_id in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 11:49:02 UTC] PHP Notice:  Undefined index: cell_id in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 11:49:02 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 3
+[17-Jul-2018 11:49:02 UTC] PHP Notice:  Undefined index: cell_id in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 12:23:11 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 12:40:12 UTC] PHP Warning:  explode(): Empty delimiter in /home/devamol1988/public_html/trazer/WebTowers.php on line 18
+[17-Jul-2018 12:46:06 UTC] PHP Warning:  number_format() expects parameter 1 to be float, array given in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 12:56:21 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 12:56:21 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 12:59:32 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 12:59:32 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 12:59:49 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 12:59:49 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 13:00:06 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 13:00:06 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 13:00:27 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 13:00:27 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[17-Jul-2018 14:24:05 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 11
+[17-Jul-2018 14:24:05 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 23
+[17-Jul-2018 14:24:05 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 24
+[18-Jul-2018 06:39:18 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:39:18 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:39:18 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 06:49:25 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:49:25 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:49:25 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 06:50:25 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:50:25 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:50:25 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 06:52:04 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:52:04 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:52:04 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 06:52:23 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:52:23 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:52:23 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 06:52:49 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:52:49 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:52:49 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 06:53:05 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 06:53:05 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 06:53:05 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 07:14:07 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 07:14:07 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 07:14:07 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[18-Jul-2018 07:42:54 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[18-Jul-2018 17:41:08 UTC] PHP Notice:  Undefined index: token_no in /home/devamol1988/public_html/trazer/trazer_register.php on line 13
+[18-Jul-2018 17:45:08 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[18-Jul-2018 17:45:08 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[18-Jul-2018 17:45:08 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 04:12:21 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 04:12:21 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 04:12:21 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 04:27:29 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 04:27:29 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 04:27:29 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 04:28:08 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 04:28:08 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 04:28:08 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 04:28:53 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 04:28:53 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 04:28:53 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 04:29:45 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 04:29:45 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 04:29:45 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 04:31:31 UTC] PHP Notice:  Undefined index: data in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 04:31:31 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 04:31:31 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 05:52:10 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 05:52:10 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 05:52:10 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 06:39:55 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 06:39:55 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 06:39:55 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 06:40:14 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 06:40:14 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 06:40:14 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 06:42:32 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 06:42:32 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 06:42:32 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 06:43:29 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 06:43:29 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 06:43:29 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 07:23:48 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 07:23:48 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 07:23:48 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 11:02:41 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 11:02:41 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 11:02:41 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 11:03:04 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 11:03:04 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 11:03:04 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 11:04:22 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 11:04:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 11:04:22 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 11:12:16 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 11:12:16 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 11:12:16 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 11:55:07 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[19-Jul-2018 11:55:07 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[19-Jul-2018 11:55:29 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 11:55:29 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 11:55:29 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 11:55:48 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 11:55:48 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 11:55:48 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 12:53:33 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 12:53:33 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 12:53:33 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 12:55:32 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 12:55:32 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 12:55:32 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 13:00:37 UTC] PHP Notice:  Undefined index: circle in /home/devamol1988/public_html/trazer/towerdetails.php on line 14
+[19-Jul-2018 13:01:05 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 13:01:05 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 13:01:05 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 13:01:43 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 13:01:43 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 13:01:43 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[19-Jul-2018 13:02:18 UTC] PHP Notice:  Undefined variable: POST in /home/devamol1988/public_html/trazer/WebTowers.php on line 9
+[19-Jul-2018 13:02:18 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/devamol1988/public_html/trazer/WebTowers.php on line 19
+[19-Jul-2018 13:02:18 UTC] PHP Notice:  Undefined offset: 1 in /home/devamol1988/public_html/trazer/WebTowers.php on line 20
+[20-Jul-2018 05:45:11 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[20-Jul-2018 05:45:11 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[20-Jul-2018 05:45:11 UTC] PHP Notice:  Undefined index: radius in /home/devamol1988/public_html/trazer/fetchtowers.php on line 11
+[20-Jul-2018 05:45:22 UTC] PHP Notice:  Undefined index: latitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 9
+[20-Jul-2018 05:45:22 UTC] PHP Notice:  Undefined index: longitude in /home/devamol1988/public_html/trazer/fetchtowers.php on line 10
+[20-Jul-2018 05:45:22 UTC] PHP Notice:  Undefined index: radius in /home/devamol1988/public_html/trazer/fetchtowers.php on line 11
