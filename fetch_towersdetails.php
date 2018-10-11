@@ -101,8 +101,8 @@
          		$c++;
     	}
 	}
-	$user_data = json_encode($ret);
-	//print_r($user_data); die();
+	//$user_data = json_encode($ret);
+	print_r($user_data); die();
 	print $user_data;
  
 
