@@ -24,7 +24,7 @@
 //  AND (latitude) >0 AND (longitude) >0 )";  //isnumeric
 
    	$sql = "SELECT TOP 5 * FROM towers_details";  
-        $res = mysqli_query($con, $sql); 
+        $res = sqlsrv_query($con, $sql); 
 	//echo $sql; die();
 	$ret=NULL; $c=0;
 	
@@ -34,7 +34,7 @@
 
 	if($count_res > 0)
 	{
-    	while($row1=mysqli_fetch_assoc($res))
+    	while($row1=SQLSRV_FETCH_ASSOC($res))
     	{
     	    //echo "hello"; die();
     // 		$ret[$c]['sptowersid'] = $row1['sptowersid'];
