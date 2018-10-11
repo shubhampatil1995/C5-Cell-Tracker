@@ -55,10 +55,12 @@
 //	echo "hello radius".$radius; die();
 // 	$sql = "SELECT DISTINCT(towerid_original) as towerid_original, sptowersid, spmasterid, spcirclemasterid, towerid, towerid_original, towerName_original, towername, latitude, longitude, geopoints, address1, address2, towercity, towerstate, towercountry, azimuth, msc_name, mcc, mnc, lac, requiredzeros, spnameid, cellid, place, cgi, lac_cellid FROM towers_details WHERE ( 6378 * SQRT( POWER( RADIANS( CAST( '".$latitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( latitude AS DECIMAL( 20, 10 ) ) ) , 2) + POWER( RADIANS( CAST( '".$longitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( longitude AS DECIMAL( 20, 10 ) ) ) , 2 ) ) <= '".$radius."'
 //  AND isnumeric(latitude) >0 AND isnumeric(longitude) >0 )"; 
-    	$sql = "SELECT DISTINCT(towerid_original) as towerid_original, towername, latitude, longitude, address1, address2, towercity, towerstate, towercountry, azimuth, spnameid FROM towers_details WHERE ( 6378 * SQRT( POWER( RADIANS( CAST( '".$latitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( latitude AS DECIMAL( 20, 10 ) ) ) , 2) + POWER( RADIANS( CAST( '".$longitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( longitude AS DECIMAL( 20, 10 ) ) ) , 2 ) ) <= '".$radius."'
- AND (latitude) >0 AND (longitude) >0 )";  //isnumeric
+//     	$sql = "SELECT DISTINCT(towerid_original) as towerid_original, towername, latitude, longitude, address1, address2, towercity, towerstate, towercountry, azimuth, spnameid FROM towers_details WHERE ( 6378 * SQRT( POWER( RADIANS( CAST( '".$latitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( latitude AS DECIMAL( 20, 10 ) ) ) , 2) + POWER( RADIANS( CAST( '".$longitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( longitude AS DECIMAL( 20, 10 ) ) ) , 2 ) ) <= '".$radius."'
+//  AND (latitude) >0 AND (longitude) >0 )";  //isnumeric
+
+   	$sql = "SELECT top 5 towerid_original, towername, latitude, longitude, address1, address2, towercity, towerstate, towercountry, azimuth, serviceprovidername FROM towers_details";  
  
-        $res = mysqli_query($con, $sql); //echo $sql; die();
+        $res = mysqli_query($con, $sql); echo $sql; die();
 	$ret=NULL; $c=0;
 	
 	$count_res = $res->num_rows;
