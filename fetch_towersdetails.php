@@ -31,7 +31,24 @@
 //     	$sql = "SELECT DISTINCT(towerid_original) as towerid_original, towername, latitude, longitude, address1, address2, towercity, towerstate, towercountry, azimuth, spnameid FROM towers_details WHERE ( 6378 * SQRT( POWER( RADIANS( CAST( '".$latitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( latitude AS DECIMAL( 20, 10 ) ) ) , 2) + POWER( RADIANS( CAST( '".$longitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( longitude AS DECIMAL( 20, 10 ) ) ) , 2 ) ) <= '".$radius."'
 //  AND (latitude) >0 AND (longitude) >0 )";  //isnumeric
 
-   	$sql = "SELECT top 5 * FROM towers_details";  
+   	$sql = "SELECT TOP 5 * FROM towers_details";  
+
+
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+	    // output data of each row
+	    while($row = $result->fetch_assoc()) {
+		echo "id: " . $row["towerid_original"]. " - Name: " . $row["towername"]. " " . $row["azimuth"]. "<br>";
+	    }
+	} else {
+	    echo "0 results";
+	}
+	$conn->close();
+
+	die();
+
+
  
         $res = mysqli_query($con, $sql); 
 	//echo $sql; die();
