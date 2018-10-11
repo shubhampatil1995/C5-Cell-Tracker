@@ -17,15 +17,7 @@
     "PWD" => "<Prosoftdev12#>");
 
     $con = sqlsrv_connect($serverName, $connectionOptions);
-        
-	if ($con->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-	} 
-	echo "Connected successfully";
-    
-//     echo "hello Server".$con; 
-      die();
-    
+           
 	
 	$latitude= $_POST["latitude"];
 	$longitude= $_POST["longitude"];
@@ -78,7 +70,7 @@
         //  		$ret[$c]['cgi'] = $row1['cgi'];
         //  		$ret[$c]['lac_cellid'] = $row1['lac_cellid'];
          		
-         		//print_r($ret); die();
+         		print_r($ret); die();
          		$c++;
     	}
 	}
