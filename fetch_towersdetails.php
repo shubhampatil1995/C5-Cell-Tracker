@@ -25,10 +25,18 @@
 
    	$sql = "SELECT TOP 5 * FROM towers_details";  
         $res = sqlsrv_query($con, $sql); 
-	//echo $sql; die();
+	if($res){
+		echo "Good to Go";die();
+	}
+else{
+echo "bad to Go";die();
+}
+		
+	echo $sql; die();
 	$ret=NULL; $c=0;
 	
 	$count_res = $res->num_rows;
+
 	echo "total Results";
 	echo $count_res;die();
 
