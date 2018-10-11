@@ -24,26 +24,8 @@
 //  AND (latitude) >0 AND (longitude) >0 )";  //isnumeric
 
    	$sql = "SELECT TOP 5 * FROM towers_details";  
-
-
-	$result = $con->query($sql);
-
-	if ($result->num_rows > 0) {
-	    // output data of each row
-	    while($row = $result->fetch_assoc()) {
-		echo "Its Coming home..";
-	    }
-	} else {
-	    echo "0 results";
-	}
-	$con->close();
-
-	die();
-
-
- 
         $res = mysqli_query($con, $sql); 
-	//echo $sql; die();
+	echo $sql; die();
 	$ret=NULL; $c=0;
 	
 	$count_res = $res->num_rows;
