@@ -1,27 +1,19 @@
-<?php 
+<?php
 
-// 	$mysql_host='localhost';
-// 	$mysql_user='prosofte_trazer';
-// 	$mysql_password='trazer@2018';	
-	
-// 	$con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,"prosofte_trazer");
-
-//   $mysql_host='tcp:prosoftserver.database.windows.net';
-// 	$mysql_user='celltracker@prosoftserver';
-// 	$mysql_password='{Prosoftdev12#}';
-	
-	
-    $serverName = "<prosoftserver.database.windows.net>";
-    $connectionOptions = array("Database" => "<C5Cell_Tracker>", 
-    "Uid" => "<celltracker@prosoftserver>", 
-    "PWD" => "<Prosoftdev12#>");
-
-    $con = sqlsrv_connect($serverName, $connectionOptions);
-           
-	
 	$latitude= $_POST["latitude"];
 	$longitude= $_POST["longitude"];
 	$radius= $_POST["radius"];
+
+
+	$serverName = "prosoftserver.database.windows.net";
+	$connectionOptions = array("Database" => "C5Cell_Tracker","Uid" => "celltracker@prosoftserver","PWD" => "Prosoftdev12#");
+	//Establishes the connection
+	$con = sqlsrv_connect($serverName, $connectionOptions);
+	
+	if ($con->connect_error) {
+		die("Connection failed: " . $con->connect_error);
+	} 
+	echo "Connected successfully"; die();
 	
 		
 	
