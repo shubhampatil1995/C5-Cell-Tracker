@@ -60,7 +60,8 @@
 
    	$sql = "SELECT top 5 towerid_original, towername, latitude, longitude, address1, address2, towercity, towerstate, towercountry, azimuth, serviceprovidername FROM towers_details";  
  
-        $res = mysqli_query($con, $sql); echo $sql; die();
+        $res = mysqli_query($con, $sql); 
+	//echo $sql; die();
 	$ret=NULL; $c=0;
 	
 	$count_res = $res->num_rows;
