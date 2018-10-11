@@ -29,6 +29,9 @@
 	$ret=NULL; $c=0;
 	
 	$count_res = $res->num_rows;
+	echo "total Results";
+	echo $count_res;die();
+
 	if($count_res > 0)
 	{
     	while($row1=mysqli_fetch_assoc($res))
