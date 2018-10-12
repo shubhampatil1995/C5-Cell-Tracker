@@ -3,87 +3,72 @@
 	$latitude= $_POST["latitude"];
 	$longitude= $_POST["longitude"];
 	$radius= $_POST["radius"];
-
-
-	$serverName = "prosoftserver.database.windows.net";
-	$connectionOptions = array("Database" => "C5Cell_Tracker","Uid" => "celltracker@prosoftserver","PWD" => "Prosoftdev12#");
-	//Establishes the connection
-	$con = sqlsrv_connect($serverName, $connectionOptions);
 	
-// 	if ($con->connect_error) {
-// 		die("Connection failed: " . $con->connect_error);
-// 	} 
-// 	echo "Connected successfully"; die();
-	
-		
-	
-//	echo "hello radius".$radius; die();
-// 	$sql = "SELECT DISTINCT(towerid_original) as towerid_original, sptowersid, spmasterid, spcirclemasterid, towerid, towerid_original, towerName_original, towername, latitude, longitude, geopoints, address1, address2, towercity, towerstate, towercountry, azimuth, msc_name, mcc, mnc, lac, requiredzeros, spnameid, cellid, place, cgi, lac_cellid FROM towers_details WHERE ( 6378 * SQRT( POWER( RADIANS( CAST( '".$latitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( latitude AS DECIMAL( 20, 10 ) ) ) , 2) + POWER( RADIANS( CAST( '".$longitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( longitude AS DECIMAL( 20, 10 ) ) ) , 2 ) ) <= '".$radius."'
-//  AND isnumeric(latitude) >0 AND isnumeric(longitude) >0 )"; 
-//     	$sql = "SELECT DISTINCT(towerid_original) as towerid_original, towername, latitude, longitude, address1, address2, towercity, towerstate, towercountry, azimuth, spnameid FROM towers_details WHERE ( 6378 * SQRT( POWER( RADIANS( CAST( '".$latitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( latitude AS DECIMAL( 20, 10 ) ) ) , 2) + POWER( RADIANS( CAST( '".$longitude."' AS DECIMAL( 20, 10 ) ) ) - RADIANS( CAST( longitude AS DECIMAL( 20, 10 ) ) ) , 2 ) ) <= '".$radius."'
-//  AND (latitude) >0 AND (longitude) >0 )";  //isnumeric
+$serverName = "tcp:prosoftserver.database.windows.net,1433";
+$connectionOptions = array(
+    "Database" => "C5Cell_Tracker",
+    "Uid" => "celltracker",
+    "PWD" => "Prosoftdev12#"
+);
+//Establishes the connection
+$conn = sqlsrv_connect($serverName, $connectionOptions);
 
-   	$sql = "SELECT TOP 5 * FROM towers_details";  echo $sql;
-        $res = sqlsrv_query($con, $sql); print_r($res) die(); 
-	if($res){
-		echo "Good to Go";die();
-	}
-else{
-echo "bad to Go";die();
-}
-		
-	echo $sql; die();
-	$ret=NULL; $c=0;
+  $tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2]
+,[TowerCity],[TowerState],[TowerCountry],[Azimuth],[ServiceProviderName] from towers_details m where
+geometry::STGeomFromText('Polygon((15.89679 74.50852,15.89778 74.51863,15.89096 74.5176,
+15.89041 74.50784,15.89679 74.50852))',4326).STIntersects(Geopoints.MakeValid())=1";
+ 
+// echo $tsql;die();
+ 
+ $getResults= sqlsrv_query($conn, $tsql);
+ $ret=NULL; $c=0;
 	
-	$count_res = $res->num_rows;
+$count_res = $res->num_rows;
 
-	echo "total Results";
-	echo $count_res;die();
-
-	if($count_res > 0)
-	{
-    	while($row1=SQLSRV_FETCH_ASSOC($res))
+if ($getResults == FALSE)
+    die(FormatErrors(sqlsrv_errors()));
+while($row1=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
     	{
-    	    //echo "hello"; die();
-    // 		$ret[$c]['sptowersid'] = $row1['sptowersid'];
-        // 		$ret[$c]['spmasterid'] = $row1['spmasterid'];
-        //  		$ret[$c]['spcirclemasterid'] = $row1['spcirclemasterid'];
-        // 		$ret[$c]['towerid'] = $row['towerid'];
-        		$ret[$c]['towerid_original'] = $row1['towerid_original'];
-        // 		$ret[$c]['towerName_original'] = $row1['towerName_original'];
-        		$ret[$c]['towername'] = $row1['towername'];
-        		$ret[$c]['latitude'] = $row1['latitude'];
-        		$ret[$c]['longitude'] = $row1['longitude'];
-        // 		$ret[$c]['geopoints'] = $row1['geopoints'];
-        		$ret[$c]['address1'] = $row1['address1'];
-        		$ret[$c]['address2'] = $row1['address2'];
-        		$ret[$c]['towercity'] = $row1['towercity'];
-        		$ret[$c]['towerstate'] = $row1['towerstate'];
-        		$ret[$c]['towercountry'] = $row1['towercountry'];
-        		$ret[$c]['azimuth'] = $row1['azimuth'];
-        // 		$ret[$c]['msc_name'] = $row1['msc_name'];
-        //  		$ret[$c]['mcc'] = $row1['mcc'];
-        //  		$ret[$c]['mnc'] = $row1['mnc'];
-        //  		$ret[$c]['lac'] = $row1['lac'];
-        //  		$ret[$c]['requiredzeros'] = $row1['requiredzeros'];
-        		$ret[$c]['spnameid'] = $row1['spnameid'];
-        //  		$ret[$c]['cellid'] = $row1['cellid'];
-        //  		$ret[$c]['place'] = $row1['place'];
-        //  		$ret[$c]['cgi'] = $row1['cgi'];
-        //  		$ret[$c]['lac_cellid'] = $row1['lac_cellid'];
-         		
-         		//print_r($ret); die();
+				
+        		$ret[$c]['TowerID_Original'] = $row1['TowerID_Original'];
+        		$ret[$c]['TowerName'] = $row1['TowerName'];
+        		$ret[$c]['Latitude'] = $row1['Latitude'];
+        		$ret[$c]['Longitude'] = $row1['Longitude'];
+        		$ret[$c]['Address1'] = $row1['Address1'];
+        		$ret[$c]['Address2'] = $row1['Address2'];
+        		$ret[$c]['TowerCity'] = $row1['TowerCity'];
+        		$ret[$c]['TowerState'] = $row1['TowerState'];
+        		$ret[$c]['TowerCountry'] = $row1['TowerCountry'];
+        		$ret[$c]['Azimuth'] = $row1['Azimuth'];
+         
          		$c++;
     	}
-	}
-else{
 
-	echo "NAAAAAAAAAAAAAAAAAAAAAAAA"
+/*while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+    echo ($row['TowerName'] . PHP_EOL);
 
+}*/
+sqlsrv_free_stmt($getResults);
+$user_data = json_encode($ret);
+//print_r($user_data); die();
+print $user_data;
+ 
+
+function FormatErrors( $errors )
+{
+    /* Display errors. */
+    echo "Error information: ";
+
+    foreach ( $errors as $error )
+    {
+        echo "SQLSTATE: ".$error['SQLSTATE']."";
+        echo "Code: ".$error['code']."";
+        echo "Message: ".$error['message']."";
+    }
 }
-	//$user_data = json_encode($ret);
-	print_r($user_data); die();
-	print $user_data;
+// $time_end = microtime(true);
+// $execution_time = round((($time_end - $time_start)*1000),2);
+// echo 'QueryTime: '.$execution_time.' ms';
  
 
 ?>
