@@ -1,15 +1,7 @@
 <?php 
 
-// 	 $mysql_host='localhost';
-// 	 $mysql_user='prosofte_trazer';
-// 	 $mysql_password='trazer@2018';	
-// 	 $con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,"prosofte_trazer");
-
-// $mysql_host='35.200.241.253';
-// $mysql_user='root';
-// $mysql_password='12345';
-
-// $con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,"C5Cell_Tracker");
+$tower_id= $_POST['data'];
+echo "Its Coming home";die();
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -18,7 +10,7 @@ $connectionOptions = array(
     "PWD" => "Prosoftdev12#"
 );
 
-$tower_id= $_POST['data'];
+
 
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
