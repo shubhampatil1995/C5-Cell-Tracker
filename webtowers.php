@@ -1,7 +1,7 @@
 <?php 
 
 $tower_id= $_POST['data'];
-echo "Its Coming home";die();
+//echo "Its Coming home";die();
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -10,15 +10,16 @@ $connectionOptions = array(
     "PWD" => "Prosoftdev12#"
 );
 
-
-
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-  $tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2],[TowerCity],[TowerState],[TowerCountry],[Azimuth],
-  [ServiceProviderName] from towers_details m wheregeometry::STGeomFromText('Polygon((".$tower_id."))',4326).STIntersects(Geopoints.MakeValid())=1";
+$tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2],[TowerCity],[TowerState],[TowerCountry],
+[Azimuth],[ServiceProviderName] from towers_details m 
+wheregeometry::STGeomFromText('Polygon((".$tower_id."))',4326).STIntersects(Geopoints.MakeValid())=1";
+
+echo $tsql;die();
 	 
 $getResults= sqlsrv_query($conn, $tsql);
- $ret=NULL; $c=0;
+$ret=NULL; $c=0;
 	
 $count_res = $res->num_rows;
 if ($getResults == FALSE)
@@ -45,6 +46,4 @@ sqlsrv_free_stmt($getResults);
 $user_data = json_encode($ret); //print_r($user_data); die();
 print $user_data;
 //print $mResult;
-
-
 ?>
