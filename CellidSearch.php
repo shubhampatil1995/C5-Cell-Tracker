@@ -1,9 +1,7 @@
-<?php
+<?php 
 
 $towerid= $_POST["cell_id"];
 $array_towerids= explode(',', $towerid);
-
-echo $towerid;
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -12,19 +10,16 @@ $connectionOptions = array(
     "PWD" => "Prosoftdev12#"
 );
 
+//Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-
-if($conn){
-	echo "Connected";die();
-}
-
-
+	
+	if ($conn) {
+		# code...
+		echo "Connected";
+	}
 
 	$sql_delete = "DELETE FROM temp_towerdetails";
 	$res_delete = sqlsrv_query($conn,$sql_delete);
-
-
-
 	
 	//404-49-58002-100
 	//towerid_original
@@ -59,7 +54,7 @@ if($conn){
 				$ret[$c]['mnc'] = $row['mnc'];
 				$ret[$c]['lac'] = $row['lac'];
 				$ret[$c]['requiredzeros'] = $row['requiredzeros'];
-				$ret[$c]['spname'] = $row['serviceprovidername'];
+				$ret[$c]['spnameid'] = $row['spnameid'];
 				$ret[$c]['cellid'] = $row['cellid'];
 				$ret[$c]['place'] = $row['place'];
 				
@@ -93,12 +88,28 @@ if($conn){
     			$ret1[$i]['towerstate'] = $row1['ttowerstate'];
     			$ret1[$i]['towercountry'] = $row1['ttowercountry'];
     			$ret1[$i]['azimuth'] = $row1['tazimuth'];
-    			$ret1[$i]['spname'] = $row1['tserviceprovidername];
+    			$ret1[$i]['spnameid'] = $row1['tspnameid'];
     			$i++;
     		}
 		}
 	}
+
+	sqlsrv_free_stmt($getResults);
 	
 	$user_data = json_encode($ret1); //print_r($user_data); die();
 	print $user_data;
-?>
+
+
+function FormatErrors( $errors )
+{
+    /* Display errors. */
+    echo "Error information: ";
+    foreach ( $errors as $error )
+    {
+        echo "SQLSTATE: ".$error['SQLSTATE']."";
+        echo "Code: ".$error['code']."";
+        echo "Message: ".$error['message']."";
+    }
+}
+
+?>	
