@@ -13,6 +13,13 @@ $connectionOptions = array(
 
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
+if($conn){
+	return json_encode($array_towerids);
+	//return json_encode("connected");
+}
+else{
+	return json_encode("not connected");
+}
 
 	
 
