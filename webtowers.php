@@ -41,4 +41,16 @@ sqlsrv_free_stmt($getResults);
 $user_data = json_encode($ret); //print_r($user_data); die();
 print $user_data;
 //print $mResult;
+
+function FormatErrors( $errors )
+{
+    /* Display errors. */
+    echo "Error information: ";
+    foreach ( $errors as $error )
+    {
+        echo "SQLSTATE: ".$error['SQLSTATE']."";
+        echo "Code: ".$error['code']."";
+        echo "Message: ".$error['message']."";
+    }
+}
 ?>
