@@ -15,6 +15,11 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 
 	$sql_delete = "DELETE FROM temp_towerdetails";
 	$res_delete = sqlsrv_query($conn,$sql_delete);
+
+	if($conn){
+		echo "Connected";
+	}
+echo $cell_id;die();
 	
 	//404-49-58002-100
 	//towerid_original
