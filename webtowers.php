@@ -12,11 +12,9 @@ $connectionOptions = array(
 
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-$tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2],[TowerCity],[TowerState],[TowerCountry],
-[Azimuth],[ServiceProviderName] from towers_details m 
-wheregeometry::STGeomFromText('Polygon((".$tower_id."))',4326).STIntersects(Geopoints.MakeValid())=1";
+$tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2],[TowerCity],[TowerState],[TowerCountry],[Azimuth],[ServiceProviderName] from towers_details m wheregeometry::STGeomFromText('Polygon((".$tower_id."))',4326).STIntersects(Geopoints.MakeValid())=1";
 
-echo $tsql;die();
+//echo $tsql;die();
 	 
 $getResults= sqlsrv_query($conn, $tsql);
 $ret=NULL; $c=0;
