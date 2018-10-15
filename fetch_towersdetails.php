@@ -30,7 +30,7 @@ if ($getResults == FALSE)
 while($row1=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
     	{
 				
-        		$ret[$c]['TowerID_Original'] = $row1['TowerID_Original'];
+        		$ret[$c]['towerid_original'] = $row1['TowerID_Original'];
         		$ret[$c]['TowerName'] = $row1['TowerName'];
         		$ret[$c]['Latitude'] = $row1['Latitude'];
         		$ret[$c]['Longitude'] = $row1['Longitude'];
