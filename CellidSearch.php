@@ -1,9 +1,9 @@
 <?php 
 echo "yoooo";
-error_reporting(E_ALL);
-$towerid= $_POST["cell_id"];
+// error_reporting(E_ALL);
+// $towerid= $_POST["cell_id"];
 
-$array_towerids= explode(',', $towerid);
+// $array_towerids= explode(',', $towerid);
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
