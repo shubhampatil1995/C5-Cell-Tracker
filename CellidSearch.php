@@ -21,10 +21,9 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 	for($i=0; $i<count($array_towerids); $i++)
 	{
 		$sql = "SELECT DISTINCT * FROM towers_details WHERE towerid_original LIKE '%".$array_towerids[$i]."%' ";
-		$getResults = sqlsrv_query($conn, $sql); //print_r($res); die();//echo $sql; die()
+		$getResults = sqlsrv_query($conn, $sql); print_r($res); die();//echo $sql; die()
 		$c=0;$ret=NULL;
 		if ($getResults == FALSE)
-			echo "Here it is";die();
     		die(FormatErrors(sqlsrv_errors()));
 	
 		while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
