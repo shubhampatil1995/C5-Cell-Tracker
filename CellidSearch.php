@@ -1,6 +1,7 @@
 <?php 
 
 $towerid= $_POST["cell_id"];
+echo $towerid;die();
 
 $array_towerids= explode(',', $towerid);
 
