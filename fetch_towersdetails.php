@@ -31,15 +31,15 @@ while($row1=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
     	{
 				
         		$ret[$c]['towerid_original'] = $row1['TowerID_Original'];
-        		$ret[$c]['TowerName'] = $row1['TowerName'];
-        		$ret[$c]['Latitude'] = $row1['Latitude'];
-        		$ret[$c]['Longitude'] = $row1['Longitude'];
-        		$ret[$c]['Address1'] = $row1['Address1'];
-        		$ret[$c]['Address2'] = $row1['Address2'];
-        		$ret[$c]['TowerCity'] = $row1['TowerCity'];
-        		$ret[$c]['TowerState'] = $row1['TowerState'];
-        		$ret[$c]['TowerCountry'] = $row1['TowerCountry'];
-        		$ret[$c]['Azimuth'] = $row1['Azimuth'];
+        		$ret[$c]['towername'] = $row1['TowerName'];
+        		$ret[$c]['latitude'] = $row1['Latitude'];
+        		$ret[$c]['longitude'] = $row1['Longitude'];
+        		$ret[$c]['address1'] = $row1['Address1'];
+        		$ret[$c]['address2'] = $row1['Address2'];
+        		$ret[$c]['towercity'] = $row1['TowerCity'];
+        		$ret[$c]['towerstate'] = $row1['TowerState'];
+        		$ret[$c]['towercountry'] = $row1['TowerCountry'];
+        		$ret[$c]['azimuth'] = $row1['Azimuth'];
          
          		$c++;
     	}
