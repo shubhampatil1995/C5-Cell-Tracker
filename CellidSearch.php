@@ -3,7 +3,6 @@
 $towerid= $_POST["cell_id"];
 $array_towerids= explode(',', $towerid);
 
-echo $towerid;die();
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
     "Database" => "C5Cell_Tracker",
@@ -23,12 +22,12 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 	{
 		$sql = "SELECT DISTINCT * FROM towers_details WHERE towerid_original LIKE '%".$array_towerids[$i]."%' ";
 		$getResults = sqlsrv_query($conn, $sql); //print_r($res); die();//echo $sql; die()
-		$cnt = $getResults->num_rows;
 		$c=0;$ret=NULL;
-		if($cnt > 0)
+		if ($getResults == FALSE)
+    		die(FormatErrors(sqlsrv_errors()));
+	
+		while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 		{
-			while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
-			{
 		
 				$ret[$c]['spmasterid'] = $row['spmasterid'];
 				$ret[$c]['spcirclemasterid'] = $row['spcirclemasterid'];
@@ -62,15 +61,15 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 				$res_insert = sqlsrv_query($conn,$sql_insert); //echo $sql_insert; die();
 				
 				$c++; 
-			}//die();
+			//die();
 		}
 		
 		$sql_fetch = "SELECT * FROM temp_towerdetails";
 		$res_fetch = sqlsrv_query($conn, $sql_fetch);//  echo $sql_fetch; die();
-		$cnt_fetch = $res_fetch->num_rows;
+	
 		$ret1=NULL; $i=0;  
-		if($cnt_fetch > 0)
-		{
+		if ($getResults == FALSE)
+    			die(FormatErrors(sqlsrv_errors()));
     		while($row1=sqlsrv_fetch_array($res_fetch, SQLSRV_FETCH_ASSOC))
     		{
 
@@ -86,7 +85,7 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
     			$ret1[$i]['azimuth'] = $row1['tazimuth'];
     			$ret1[$i]['spnameid'] = $row1['tspnameid'];
     			$i++;
-    		}
+    		
 		}
 	}
 
