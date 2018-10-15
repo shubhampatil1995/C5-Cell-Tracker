@@ -19,7 +19,6 @@ $getResults= sqlsrv_query($conn, $tsql);
 $ret=NULL; $c=0;
 
 if ($getResults == FALSE)
-	echo "No Results";die();
     die(FormatErrors(sqlsrv_errors()));
 while($row1=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 {
