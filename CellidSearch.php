@@ -3,6 +3,7 @@
 $towerid= $_POST["cell_id"];
 $array_towerids= explode(',', $towerid);
 
+echo $towerid;die();
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
     "Database" => "C5Cell_Tracker",
@@ -13,11 +14,6 @@ $connectionOptions = array(
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 	
-	if ($conn) {
-		# code...
-		echo "Connected";
-	}
-
 	$sql_delete = "DELETE FROM temp_towerdetails";
 	$res_delete = sqlsrv_query($conn,$sql_delete);
 	
