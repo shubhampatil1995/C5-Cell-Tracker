@@ -1,8 +1,8 @@
 <?php
 
-	$latitude= $_POST["latitude"];
-	$longitude= $_POST["longitude"];
-	$radius= $_POST["radius"];
+$latitude= $_POST["latitude"];
+$longitude= $_POST["longitude"];
+$radius= $_POST["radius"];
 	
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -13,10 +13,10 @@ $connectionOptions = array(
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 
-  $tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2]
-,[TowerCity],[TowerState],[TowerCountry],[Azimuth],[ServiceProviderName] from towers_details m where
-geometry::STGeomFromText('Polygon((15.89679 74.50852,15.89778 74.51863,15.89096 74.5176,
-15.89041 74.50784,15.89679 74.50852))',4326).STIntersects(Geopoints.MakeValid())=1";
+$tsql = "SELECT  [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1] ,[Address2],[TowerCity] as City,[TowerState] as [State] 
+,[TowerCountry] as Country,[Azimuth],[ServiceProviderName]FROM towers_details WITH(NOLOCK) WHERE(ISNUMERIC(Latitude) = 1) AND (ISNUMERIC(Longitude) = 1) AND  
+(6378* sqrt(POWER(Radians(Convert(float,".$latitude."))-Radians(Convert(float,Latitude)),2)+
+POWER(Radians(Convert(float,".$longitude."))-Radians(Convert(float,Longitude)),2))<=".$radius.")";
  
 // echo $tsql;die();
  
@@ -40,7 +40,8 @@ while($row1=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
         		$ret[$c]['towerstate'] = $row1['TowerState'];
         		$ret[$c]['towercountry'] = $row1['TowerCountry'];
         		$ret[$c]['azimuth'] = $row1['Azimuth'];
-         
+			$ret[$c]['spname'] = $row1['ServiceProviderName'];
+         		
          		$c++;
     	}
 
