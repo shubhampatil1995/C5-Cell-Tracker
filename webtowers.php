@@ -33,6 +33,7 @@ while($row1=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
         		$ret[$c]['towerstate'] = $row1['TowerState'];
         		$ret[$c]['towercountry'] = $row1['TowerCountry'];
         		$ret[$c]['azimuth'] = $row1['Azimuth'];
+			$ret[$c]['spname'] = $row1['ServiceProviderName'];
          
          		$c++;
     	}
