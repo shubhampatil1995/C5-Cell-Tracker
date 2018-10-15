@@ -10,12 +10,13 @@ $connectionOptions = array(
     "PWD" => "Prosoftdev12#"
 );
 
+$conn = sqlsrv_connect($serverName, $connectionOptions);
+
 if($conn){
 	echo "Connected";
 }
 echo $cell_id;die();
 
-$conn = sqlsrv_connect($serverName, $connectionOptions);
 
 	$sql_delete = "DELETE FROM temp_towerdetails";
 	$res_delete = sqlsrv_query($conn,$sql_delete);
