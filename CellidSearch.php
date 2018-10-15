@@ -1,6 +1,6 @@
 <?php 
 echo "yoooo";
-ini_set('ERROR_REPORTING','E_ALL');
+error_reporting(E_ALL);
 $towerid= $_POST["cell_id"];
 
 $array_towerids= explode(',', $towerid);
