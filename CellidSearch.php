@@ -49,7 +49,7 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 				$ret[$c]['mnc'] = $row['mnc'];
 				$ret[$c]['lac'] = $row['lac'];
 				$ret[$c]['requiredzeros'] = $row['requiredzeros'];
-				$ret[$c]['spnameid'] = $row['spnameid'];
+				$ret[$c]['spname'] = $row['serviceprovidername'];
 				$ret[$c]['cellid'] = $row['cellid'];
 				$ret[$c]['place'] = $row['place'];
 				
@@ -83,7 +83,7 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
     			$ret1[$i]['towerstate'] = $row1['ttowerstate'];
     			$ret1[$i]['towercountry'] = $row1['ttowercountry'];
     			$ret1[$i]['azimuth'] = $row1['tazimuth'];
-    			$ret1[$i]['spnameid'] = $row1['tspnameid'];
+    			$ret1[$i]['spname'] = $row1['tserviceprovidername];
     			$i++;
     		}
 		}
