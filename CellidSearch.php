@@ -69,7 +69,8 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 	
 		$ret1=NULL; $i=0;  
 		if ($getResults == FALSE)
-    			die(FormatErrors(sqlsrv_errors()));
+    			echo ""Here in Second";die();
+			die(FormatErrors(sqlsrv_errors()));
     		while($row1=sqlsrv_fetch_array($res_fetch, SQLSRV_FETCH_ASSOC))
     		{
 
