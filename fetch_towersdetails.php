@@ -17,8 +17,9 @@ $tsql = "SELECT  [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1
 ,[TowerCountry] as Country,[Azimuth],[ServiceProviderName]FROM towers_details WITH(NOLOCK) WHERE(ISNUMERIC(Latitude) = 1) AND (ISNUMERIC(Longitude) = 1) AND  
 (6378* sqrt(POWER(Radians(Convert(float,".$latitude."))-Radians(Convert(float,Latitude)),2)+
 POWER(Radians(Convert(float,".$longitude."))-Radians(Convert(float,Longitude)),2))<=".$radius.")";
- 
-// echo $tsql;die();
+
+
+ echo $tsql;die();
  
  $getResults= sqlsrv_query($conn, $tsql);
  $ret=NULL; $c=0;
