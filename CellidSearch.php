@@ -24,6 +24,7 @@ $conn = sqlsrv_connect($serverName, $connectionOptions);
 		$getResults = sqlsrv_query($conn, $sql); //print_r($res); die();//echo $sql; die()
 		$c=0;$ret=NULL;
 		if ($getResults == FALSE)
+			echo "Here it is";
     		die(FormatErrors(sqlsrv_errors()));
 	
 		while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
