@@ -1,7 +1,7 @@
 <?php 
 
 $towerid= $_POST["cell_id"];
-print_r($towerid);
+print_r($towerid);die();
 $array_towerids= explode(',', $towerid);
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
