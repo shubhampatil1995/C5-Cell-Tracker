@@ -1,16 +1,5 @@
 <?php 
 
-// 	$mysql_host='localhost';
-// 	$mysql_user='prosofte_trazer';
-// 	$mysql_password='trazer@2018';	
-
-    $mysql_host='35.200.241.253';
-	$mysql_user='root';
-	$mysql_password='12345';
-
-	$con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,"C5Cell_Tracker");
-
-	
 	$mobile = $_POST['mobile'];
 	
 	$otp_number = mt_rand(1000, 9999);
