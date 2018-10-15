@@ -3,7 +3,7 @@
 $towerid= $_POST["cell_id"];
 $array_towerids= explode(',', $towerid);
 
-echo $cell_id;die();
+echo $towerid;
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -15,7 +15,7 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 
 if($conn){
-	echo "Connected";
+	echo "Connected";die();
 }
 
 
