@@ -13,15 +13,16 @@ $connectionOptions = array(
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 	
-	$sql_delete = "DELETE FROM temp_towerdetails";
-	$res_delete = sqlsrv_query($conn,$sql_delete);
+$sql_delete = "DELETE FROM temp_towerdetails";
+$res_delete = sqlsrv_query($conn,$sql_delete);
 	
 	//404-49-58002-100
 	//towerid_original
 	for($i=0; $i<count($array_towerids); $i++)
 	{
 		$sql = "SELECT DISTINCT * FROM towers_details WHERE towerid_original LIKE '%".$array_towerids[$i]."%' ";
-		$getResults = sqlsrv_query($conn, $sql); echo $sql; die()
+		echo $sql; die();
+		$getResults = sqlsrv_query($conn, $sql); 
 		$c=0;$ret=NULL;
 		if ($getResults == FALSE)
     		die(FormatErrors(sqlsrv_errors()));
