@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+$towerid= $_POST["cell_id"];
+$array_towerids= explode(',', $towerid);
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -7,19 +10,18 @@ $connectionOptions = array(
     "PWD" => "Prosoftdev12#"
 );
 
-//Establishes the connection
+if($conn){
+	echo "Connected";
+}
+echo $cell_id;die();
+
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-	
-	$towerid= $_POST["cell_id"];
-	$array_towerids= explode(',', $towerid);
 
 	$sql_delete = "DELETE FROM temp_towerdetails";
 	$res_delete = sqlsrv_query($conn,$sql_delete);
 
-	if($conn){
-		echo "Connected";
-	}
-echo $cell_id;die();
+
+
 	
 	//404-49-58002-100
 	//towerid_original
