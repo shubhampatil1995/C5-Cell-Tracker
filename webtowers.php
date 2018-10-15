@@ -1,7 +1,7 @@
 <?php 
 
 $tower_id= $_POST['data'];
-//echo "Its Coming home";die();
+echo $tower_id;
 
 $serverName = "tcp:prosoftserver.database.windows.net,1433";
 $connectionOptions = array(
@@ -14,6 +14,8 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql = "SELECT [TowerID_Original],[TowerName],[Latitude],[Longitude],[Address1],[Address2],[TowerCity],[TowerState],[TowerCountry],[Azimuth],
 [ServiceProviderName] from towers_details m where geometry::STGeomFromText('Polygon((".$tower_id."))',4326).STIntersects(Geopoints.MakeValid())=1";
+
+echo $tsql;die();
 
 $getResults= sqlsrv_query($conn, $tsql);
 $ret=NULL; $c=0;
