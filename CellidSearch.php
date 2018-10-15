@@ -16,10 +16,10 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 if($conn)
 {
-	echo json_encode('connected ');
+	echo "CONNECTED";
 }
 else{
-	echo FormatErrors(sqlsrv_errors());
+	echo "NOOOOOOOOOOOOOOOOOO";
 }
 	
 
