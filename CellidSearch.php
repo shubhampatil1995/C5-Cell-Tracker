@@ -1,5 +1,5 @@
 <?php 
-echo "yoooo";
+// echo "yoooo";
 // error_reporting(E_ALL);
 // $towerid= $_POST["cell_id"];
 
@@ -16,10 +16,10 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 if($conn)
 {
-	return	json_encode('connected ');
+	echo json_encode('connected ');
 }
 else{
-	return FormatErrors(sqlsrv_errors());
+	echo FormatErrors(sqlsrv_errors());
 }
 	
 
